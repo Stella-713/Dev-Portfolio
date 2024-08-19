@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.hoseoSP.mapper.Useage_timeMapper">
+		
+		<select id="getList" resultType="com.hoseoSP.domain.Useage_timeVO">	
+
+			<![CDATA[
+				
+				select * from using_time where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR((select max(update_date) from using_time),'yy/MM/dd')
+
+			]]>
+		
+		</select>
+		
+		<select id="Month_Use" resultType="int">
+			
+				select sum(appTime) from using_time where TO_CHAR(update_date,'yy/MM/dd') > TO_CHAR(SYSDATE-7,'yy/MM/dd') group by TO_CHAR(update_date,'yy/MM/dd') order by TO_CHAR(update_date,'yy/MM/dd') desc
+
+				
+		</select>
+				
+		<select id="reshow" resultType="com.hoseoSP.domain.Useage_timeVO" parameterType="com.hoseoSP.domain.Useage_timeVO">
+		
+		
+select a.phoneNum,a.appName,sum(a.appTime) as appTime,ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where phoneNum = #{phoneNum})*100,2) 
+as sumTime from using_time a
+where a.phoneNum = #{phoneNum}
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+
+		</select>
+		
+		<select id="WeekInterval" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+		</select>
+		<select id="WeekInterval2" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-1,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-1,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+		</select>
+		<select id="WeekInterval3" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-2,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-2,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+		</select>
+		<select id="WeekInterval4" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-3,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-3,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+		</select>
+		<select id="WeekInterval5" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-4,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-4,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+			
+		</select>
+		<select id="WeekInterval6" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-5,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-5,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+			
+		</select>
+		<select id="WeekInterval7" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+select a.phoneNum,a.appName,sum(a.appTime),ROUND(a.appTime/
+    (select sum(appTime) 
+    from using_time 
+    where TO_CHAR(update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-6,'YY/MM/DD'))*100,2) 
+as sumTime from using_time a
+where TO_CHAR(a.update_date,'yy/MM/dd') = TO_CHAR(SYSDATE-6,'YY/MM/DD') 
+group by a.phoneNum,a.appName,a.appTime
+having sum(a.appTime) != 0
+			]]>
+			
+		</select>
+		
+		<!-- <select id="MonInterval" resultType="com.hoseoSP.domain.Useage_timeVO">
+			<![CDATA[
+				select phoneNum,appName,sum(appTime),ROUND(sum(appTime)/(select sum(appTime) from using_time where phoneNum = 13604758941 and update_date >= TO_CHAR(SYSDATE-30,'YY/MM/DD'))*100,2) as sumTime from using_time where phoneNum = 13604758941 and update_date >= TO_CHAR(SYSDATE-30,'YY/MM/DD') group by phoneNum,appName having sum(appTime) != 0
+			]]>
+			
+		</select> -->
+		
+		<!-- <select id="Time">
+			select 
+		</select> -->
+		<!-- <select id="sumUT" resultType="com.hoseoSP.domain.sumUT">
+			select sum(appTime) from using_time
+		</select> -->
+		
+</mapper>

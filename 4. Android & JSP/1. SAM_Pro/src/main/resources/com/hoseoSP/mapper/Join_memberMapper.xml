@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.hoseoSP.mapper.Join_memberMapper">
+	
+		<insert id="getList">
+			
+				insert into users (username,password,enabled,e_mail)
+				 values(#{username},#{password},#{enabled},#{e_mail})
+		
+		</insert>
+	<insert id="insert">
+		insert into tbl_cards (bno,title,subtitle,content)
+		values (seq_card.nextval, #{title}, #{subtitle}, #{content})
+		
+	</insert>
+	
+</mapper> 

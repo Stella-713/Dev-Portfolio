@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0 //EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.hoseoSP.mapper.MemberMapper">
+		
+		
+		<insert id="join">
+			insert into tbl_member (userid,userpw,username,phoneNum) 
+			values (#{userid}, #{userpw},#{username},#{phoneNum})
+		</insert>
+		
+		<insert id="auth">		
+			insert into tbl_member_auth (userid, auth) values (#{userid},#{auth})
+		</insert>
+		
+		<select id="read" resultType="com.hoseoSP.domain.MemberVo">
+			select * from tbl_board where userid = #{userid}
+		</select>
+		
+	</mapper>
