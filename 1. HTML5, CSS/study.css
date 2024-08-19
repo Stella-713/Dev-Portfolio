@@ -1,0 +1,46 @@
+nav
+{
+	margin:10px;
+}
+nav ul
+{
+	list-style:none;
+	text-align:center;
+	border-top:1px solid skyblue;
+	border-bottom:1px solid skyblue;
+	padding: 10px 0;
+}
+nav ul li
+{
+	display:inline;
+	text-transform:uppercase;
+	padding:0 10px;
+	letter-spacing:10px;
+	margin-right:55px;
+}	
+nav ul li a
+{
+	text-decoration:none;
+	color:black;
+	font-family:Jokerman, impact, cooper black;
+}	
+nav ul li a:hover
+{
+	color:red;
+}
+table
+{
+	text-align:center;
+}
+table th
+{
+	background-color:rgba(135,206,235,0.4);
+}
+	
+
+
+
+
+
+
+
