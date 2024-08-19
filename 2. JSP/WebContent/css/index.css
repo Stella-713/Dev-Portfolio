@@ -1,0 +1,60 @@
+#header
+{
+	float : left;
+	margin-bottom : 20px;
+}
+#login
+{
+	width : 100%;
+	font-size : 25px;
+}
+ul
+{
+	list-style : none;
+	text-align : center;
+	width : 45%;
+	float : right;
+	padding : 10px 2px;
+	background-color : #FFB2F5;
+}
+ul li
+{
+	display : inline;
+	text-transform : uppercase;
+	padding : 0px 10px;
+	letter-spacing : 10px;
+	margin-left:30px;
+	margin-right:30px;
+}	
+ul li a
+{
+	text-decoration : none;
+	color : black;
+}
+ul li a:hover
+{
+	color : white;
+}
+table
+{
+	width : 1200;
+	height : 900;
+	border-spacing : 15px;
+}
+table th
+{
+	font-size : 60;
+}
+table th a
+{
+	text-decoration : none;
+	color : black;
+}
+.in
+{
+	background-color : #CEF279;
+}
+.out
+{
+	background-color : #B2CCFF;
+}

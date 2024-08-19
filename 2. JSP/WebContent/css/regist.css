@@ -1,0 +1,69 @@
+body
+{
+	font-family:SeoulHangang B ∫∏≈Î;
+}
+div#a
+{
+	width:60%;
+	margin:0 auto;
+}
+h2
+{
+	color:blue;
+}
+table
+{
+	height:300px;
+	
+}
+th
+{
+	text-align:center;
+	height:30px;
+	background-color:#B2EBF4;
+	color:white;
+	padding:3px;
+}
+td
+{
+	height:30px;
+    padding:3px;
+}
+td b
+{
+	color:gray;
+}
+input
+{
+	height:25px;
+}
+nav
+{
+	margin:10px;
+}
+nav ul
+{
+	list-style:none;
+	text-align:center;
+	border-top:1px solid skyblue;
+	border-bottom:1px solid skyblue;
+	padding: 10px 0;
+}
+nav ul li
+{
+	display:inline;
+	text-transform:uppercase;
+	padding:0 10px;
+	letter-spacing:10px;
+	margin-right:55px;
+}	
+nav ul li a
+{
+	text-decoration:none;
+	color:black;
+	font-family:Jokerman, impact, cooper black;
+}	
+nav ul li a:hover
+{
+	color:red;
+}
