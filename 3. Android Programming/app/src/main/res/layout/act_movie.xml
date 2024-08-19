@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/actmv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미스터리 핑크 - 주연"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="사랑하기 때문에 - 이현경 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="굿바이 싱글 - 상미 역(조연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="기억의 조각들 - 엄마 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복숭아나무 - 우정출연"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="창피해 - 희진 역(조연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="요술 - 지은 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="스토리 오브 와인 - 진주 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="유쾌한 도우미 - 수녀 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="지구에서 연애 중 - 수현 역(주연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사랑따윈 필요없어 - 지혜 역(조연)"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/actmv12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="베케이션 - 조연"
+        android:textSize="27sp" />
+
+</LinearLayout>

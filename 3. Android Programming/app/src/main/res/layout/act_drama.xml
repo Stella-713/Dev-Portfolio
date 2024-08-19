@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/act1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="뷰티 인사이드 - 한세계 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="사랑의 온도 - 이현수 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="낭만닥터 김사부 - 윤서정 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="또 오해영 - 오해영 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="식샤를 합시다 2 - 백수지 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="삼총사 - 강빈 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="불온(드라마 페스티벌) - 준경모 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="제왕의 딸 수백향 - 수백향 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="불의 여신 정이 - 화령 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="오자룡이 간다 - 나진주 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="마의 - 조소용 역(특별출연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="신들의 만찬 - 하인주/송연우 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="절정 - 안일양 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="짝패 - 달이 역(주연)"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="히트 - 단역"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/act16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:text="황진이 - 정가은 역(단역)"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
